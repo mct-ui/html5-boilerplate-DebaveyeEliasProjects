@@ -10,6 +10,7 @@ html {
     font-family: "Helvetica Neue",Helvetica, Arial, sans-serif;
     color: #111;
     padding: 24px 24px 0;
+    scroll-behavior: smooth;
 }
 
 /*
@@ -70,6 +71,7 @@ h6 {
     margin: 0px 0px 24px;
 }
 
+
 p,
 ol,
 ul,
@@ -89,16 +91,28 @@ ol{
     font-family: 'Times New Roman', serif;
 }
 
-blockquote * {
-    font-size: inherit;
-    line-height: inherit;
-}
-
 li ul,
 li ol{
     padding-left: 24px;
     margin-bottom: 0px;
 }
+
+
+blockquote {
+
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-size: 23px;
+    line-height: 32px;
+    margin: 0px 0px 24px;
+
+}
+
+blockquote * {
+    font-size: inherit;
+    line-height: inherit;
+}
+
 
 
 figcaption {
@@ -128,6 +142,24 @@ a:active {
 a:hover,
 a:focus {
     color: crimson;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid gainsboro;
+
+}
+th{
+    text-align: left;
+}
+th,td{
+    padding:4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+tr.odd {
+    background-color: whitesmoke;
 }
 
 /*
